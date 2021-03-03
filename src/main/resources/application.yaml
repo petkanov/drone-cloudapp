@@ -2,7 +2,12 @@ server:
   port: 80
 
 app: 
-  logging-to: console
+  logging-to: console # options are: console / file
+  drone: 
+    video-ws-endpoint: /videofeed
+    video-server-port: 1313
+    drone-id-length: 1 # One bite size
+
 
 logging: 
   level:
