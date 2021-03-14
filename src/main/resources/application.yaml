@@ -6,7 +6,9 @@ app:
   drone: 
     video-ws-endpoint: /videofeed
     video-server-port: 1313
-    drone-id-length: 1 # One bite size
+    drone-id-length: 1 # One Byte size
+    default-altitude: 4
+    default-speed: 15
 
 
 logging: 

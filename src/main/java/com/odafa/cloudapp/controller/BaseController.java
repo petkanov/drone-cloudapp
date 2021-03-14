@@ -21,11 +21,14 @@ public class BaseController {
 
 	private final ConfigReader configurations;
 
-
     @GetMapping("/")
-    public String indexPage() {
+    public String indexPage(Model model) {
+		
+		model.addAttribute("publicIp", getPublicIpAddress());
+		model.addAttribute("defaultSpeed", configurations.getDefaultSpeed());
+		model.addAttribute("defaultAltitude", configurations.getDefaultAltitude());
+		model.addAttribute("videoEndpoint", configurations.getVideoWsEndpoint());
         
-        log.debug("Index Page Opened");
         return "index";
     }
     

@@ -19,5 +19,11 @@ public class ConfigReader {
 
     @Value("${app.drone.drone-id-length}")
 	private int droneIdLength;
+
+    @Value("${app.drone.default-speed}")
+	private int defaultSpeed;
+
+    @Value("${app.drone.default-altitude}")
+	private int defaultAltitude;
     
 }
