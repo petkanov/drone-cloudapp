@@ -5,8 +5,9 @@ app:
   logging-to: console # options are: console / file
   drone: 
     video-ws-endpoint: /videofeed
+    control-server-port: 1314
     video-server-port: 1313
-    drone-id-length: 1 # One Byte size
+    drone-id-length: 1 # Amount of symbols
     default-altitude: 4
     default-speed: 15
 

@@ -14,6 +14,9 @@ public class ConfigReader {
     @Value("${app.drone.video-ws-endpoint}")
 	private String videoWsEndpoint;
 
+    @Value("${app.drone.control-server-port}")
+	private int controlServerPort;
+
     @Value("${app.drone.video-server-port}")
 	private int videoServerPort;
 

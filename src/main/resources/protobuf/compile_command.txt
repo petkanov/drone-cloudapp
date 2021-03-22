@@ -1,0 +1,12 @@
+
+proto to JAVA:
+./protoc.exe --java_out=. ProtoData.proto
+
+proto to Python:
+./protoc.exe --python_out=. ProtoData.proto
+
+
+
+For the issue with protobuf binary wheels:
+pip uninstall protobuf
+pip install --no-binary=protobuf protobuf
